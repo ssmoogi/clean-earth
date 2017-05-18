@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='css/quiz.css' rel='stylesheet'>
+    <script src="js/quiz1.js"></script>
+	<style>
+	.logo1 {
+		height: 105px;
+		float: left;
+	}
+	</style>
+  </head>
+  <body>
+  <a href='index.html' class="logo"><img class="logo1" src="images/logo.png"></a>
+
+    <div class='quizzes'>
+	<h1 class="h1">Quiz</h1>
+      <header>
+        <div class="circle">
+          <span class="checkmark" id="checkmark1">&#10003;</span>
+        </div>
+        <div class="circle">
+          <span class="checkmark" id="checkmark2">&#10003;</span>
+        </div>
+        <div class="circle">
+          <span class="checkmark" id="checkmark3">&#10003;</span>
+        </div>
+        <div class="circle">
+          <span class="checkmark" id="checkmark4">&#10003;</span>
+        </div>
+        <div class="circle">
+          <span class="checkmark" id="checkmark5">&#10003;</span>
+        </div>
+        <div class="circle">
+          <span class="checkmark" id="checkmark6">&#10003;</span>
+        </div>
+        <div class="circle">
+          <span class="checkmark" id="checkmark7">&#10003;</span>
+        </div>
+        <div class="circle">
+          <span class="checkmark" id="checkmark8">&#10003;</span>
+        </div>
+      </header>
+      <!-- <img src="our-earth2.jpg" class="back-quiz"/> -->
+      <div id="answer1" class="answer para-style">
+        <p>
+          Your Mother told you to go buy some diapers for your younger sibling.
+          When you get to the store you see two different kinds of diapers.
+          Which one would you buy?
+        </p>
+        <div class="quiz-images">
+          <img src="images/diaper2.jpeg" class="diaper"/>
+        </div>
+        <form class="form1" onsubmit="getAnswer(1); return false">
+          <div class="field">
+            <input type="radio" name="radio1" value="0">A: The Cloth Diapers?
+          </div>
+          <div class="field">
+            <input type="radio" name="radio1" value="1">B: The Bio-Degradable Diapers?
+          </div>
+          <input type="submit" value="Next">
+        </form>
+      </div>
+      <div id="answer2" class="answer hidden para-style">
+        <p>
+          You have just finished shopping for clothes, but you forgot to bring
+          your bag! Lucky for you there are two bags. The cloth bag is 50¢ and
+          the paper bag is 25¢. Which one would you buy?</p>
+        <div class="quiz-images">
+          <img src="images/cloth.jpeg" class="bag2"/>
+          <img src="images/paper.jpeg" class="bag1"/>
+        </div>
+        <form class="form2" onsubmit="getAnswer(2); return false">
+          <div class="field">
+            <input type="radio" name="radio2" value="0">A: The Paper Bags?
+          </div>
+          <div class="field">
+            <input type="radio" name="radio2" value="1">B: The Cloth Bags?
+          </div>
+          <input type="submit" value="Next">
+        </form>
+      </div>
+      <div id="answer3" class="answer hidden para-style">
+        <p>
+          You went out for a run with your friends, but then you all started
+          getting thirsty. You see a store that sells bottles. Which bottle
+          would you buy?
+        </p>
+        <div class="quiz-images">
+          <img src="images/plasticb.png" class="bottlep"/>
+          <img src="images/metalb.png" class="bottlem"/>
+        </div>
+        <form onsubmit="getAnswer(3); return false">
+          <div class="field">
+            <input type="radio" name="radio3" value="0">A: The Metal Bottle?
+          </div>
+          <div class="field">
+            <input type="radio" name="radio3" value="1">B: The Plastic Bottles?
+          </div>
+          <input type="submit" value="Next">
+        </form>
+      </div>
+      <div id="answer4" class="answer hidden para-style">
+        <p>You are playing a video game, and you are just about to beat the last
+           level! Unfortunately, the batteries died down!<br> You run to a store
+            and find 2 packets of batteries. They are both the same price, and
+            have the same number of batteries; 4. But one pack is reusable and
+            the other is not.</p>
+        <div class="quiz-images">
+          <img src="images/battery.jpeg" class="battery"/>
+          <img src="images/batteryr.png" class="batteryr"/>
+        </div>
+        <form onsubmit="getAnswer(4); return false">
+          <div class="field">
+            <input type="radio" name="radio4" value="1">A: Would you buy the Reusable Batteries?
+          </div>
+          <div class="field">
+            <input type="radio" name="radio4" value="0">B: Or would you buy the Non-Reusable Batteries?
+          </div>
+          <input type="submit" value="Next">
+        </form>
+      </div>
+      <div id="answer5" class="answer hidden para-style">
+        <p>
+          You just woke up and head downstairs to turn on the computer, but the
+           mouse is broken! You do not know how it broke. Now you have a choice.
+           Which would you do?
+         </p>
+        <div class="quiz-images">
+          <img src="images/electronics.jpg" class="electronics"/>
+        </div>
+        <form onsubmit="getAnswer(5); return false">
+          <div class="field">
+            <input type="radio" name="radio5" value="0">A: Throw the mouse into the trash?
+          </div>
+          <div class="field">
+            <input type="radio" name="radio5" value="1">B: Give it to E-waste(a site that reuses electronics)?
+          </div>
+          <input type="submit" value="Next">
+        </form>
+      </div>
+      <div id="answer6" class="answer hidden para-style">
+        <p>
+          You have a contest coming up, and you don't know what story to write!
+          You decide that you should take a break and clean up your bedroom.<br>
+          When you turn around you see a pile of scrunched up paper!:
+        </p>
+        <div class="quiz-images">
+          <img src="images/paper.jpg" class="paper">
+        </div>
+        <form onsubmit="getAnswer(6); return false">
+          <div class="field">
+            <input type="radio" name="radio6" value="1">A: Would you throw them into the Recycling can?
+          </div>
+          <div class="field">
+            <input type="radio" name="radio6" value="0">B: Or would you throw them into the Trash Bin?
+          </div>
+          <input type="submit" value="Next">
+        </form>
+      </div>
+      <div id="answer7" class="answer hidden para-style">
+        <p>
+          Your mattress has gotten uncomfortable, and you know that Trash Day
+          is coming up, but you are still not sure what to do with your mattress.
+        </p>
+        <div class="quiz-images">
+          <img src="images/mattress.png" class="mattress"/>
+        </div>
+        <form onsubmit="getAnswer(7); return false">
+          <div class="field">
+            <input type="radio" name="radio7" value="0">A: Would you put the mattress outside for the trash truck?
+          </div>
+          <div class="field">
+            <input type="radio" name="radio7" value="1">B: Or would you give the mattress to a place that reuses them?
+          </div>
+          <input type="submit" value="Next">
+        </form>
+      </div>
+      <div id="answer8" class="answer hidden para-style">
+        <p>
+          You came downstairs to get something to eat, but when you opened the
+          refigerator, some of the fruit were rotten!<br>You do know that your
+          compost bin has just been emptied.
+        </p>
+        <div class="quiz-images">
+          <img src="images/bad-food.jpeg" class="food"/>
+        </div>
+        <form onsubmit="getAnswer(8); return false">
+          <div class="field">
+            <input type="radio" name="radio8" value="0">A: Would you throw the fruit into the trash?
+          </div>
+          <div class="field">
+            <input type="radio" name="radio8" value="1">B: Or would you throw them into a compost bin?
+          </div>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div id="answer9" class="answer hidden" onsubmit="getAnswer(9)">
+        <!-- <img class="smen-clean" src="images/logo.png">
+        <nav>
+          <ul class="ul">
+            <li><a class="about-button" href="about.html">About</a></li>
+            <li><a class="quiz-button" href='quiz.html'>Quiz</a></li>
+            <li><a class="activities-button" href="activities.html">Activities</a></li>
+            <li><a class="clean-button" href="how-to-clean-earth.html">How to clean YOUR earth!</a></li>
+            <li><a class="why-button" href="http://www.liveyourdream.org/">Why should we clean the earth?</a></li>
+          </ul>
+        </nav> -->
+        <!-- <a href="My-Webpage.html"><img src="images/clean-earth-logo.png" alt="My-Webpage.html" height="120px" class="go-home"></a> -->
+        <h1>Your Results: <span class="answerResults" id='lastResult'></span><span class="answerResults"> out of 8</span></h1>
+        <!-- <p><a class="home-button" href="My-Webpage.html">Home</a></p> -->
+        <!-- <img class="girl" src="images/girl-throw-trash.png"/>
+        <img class="helping" src="images/more-cleaning.png"/>
+        <img class="boy" src="images/boy-throw-trash.gif"/> -->
+        <footer>
+          <img src="images/help1.jpg" class="images">
+          <img src="images/help2.jpeg" class="images">
+          <img src="images/help3.jpg" class="images">
+          <img src="images/help4.jpg" class="images">
+          <img src="images/help8.jpeg" class="imagess">
+          <img src="images/help5.png" class="images">
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
