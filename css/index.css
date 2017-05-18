@@ -1,0 +1,69 @@
+html {
+  height: 100%;
+}
+body {
+  background: url(../images/mountain.jpg) no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.earth-copy {
+  float: left;
+  width: 450px;
+  margin-left: 42px;
+  margin-top: -79px;
+}
+.search {
+  border-radius: 10px;
+  float: right;
+  font-size: 20px;
+  margin-right: 60px;
+  margin-top: -28px;
+  outline: none;
+  padding: 8px;
+  width: 300px;
+}
+footer {
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+}
+.coders {
+  bottom: 0;
+  color: lightgrey;
+  left: 0;
+  padding: 10px;
+  /*padding-top: 15px;*/
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+
+.song {
+  display: block;
+  margin: 21% 0 0 1%;
+}
+main {
+  color: #fff;
+  font-size: 34px;
+  margin: 15% 0 0 7%;
+  text-shadow: 0 1px 2px black;
+  width: 900px;
+}
+.quiz-button {
+  text-decoration: none;
+  display: inline-block;
+  float: right;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 8px;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 10px 40px;
+  margin-right: 60px;
+  margin-top: 60px;
+}

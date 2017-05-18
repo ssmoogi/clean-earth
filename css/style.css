@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  margin-bottom: 30px;
+}
+.main .title {
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.main {
+  font-size: 25px;
+  line-height: 1.5;
+  margin: 60px auto 0;
+  text-align: center;
+  width: 900px;
+}
+header {
+  background: #333;
+}
+header li a {
+  color: white;
+}
+.hero {
+  background: url(../images/coral-reef.jpg) no-repeat center;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+.hero:after {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(white));
+  background-image: -moz-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(white));
+  background-image: -ms-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(white));
+  background-image: -o-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(white));
+  bottom: 0;
+  content: '';
+  height: 300px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.video1, .video2 {
+  margin: 0 auto;
+  display: block;
+  height: 396px;
+  width: 700px;
+}
+.video1 {
+  margin-bottom: 50px;
+}
+.video2 {
+  margin-top: 50px;
+}
+.solution-list {
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    padding: 0 20px;
+    width: 100%;
+  }
+}
